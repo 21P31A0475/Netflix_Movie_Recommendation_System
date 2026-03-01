@@ -54,7 +54,7 @@ df = pd.read_csv('tmdbdf.csv').iloc[:len(similarity)]
 st.markdown("<h1 style='text-align:center;'>Netflix Movie Recommendation System</h1>",
             unsafe_allow_html=True)
 
-# ---------- SELECT ----------
+# ---------- SELECT MOVIES ----------
 movie = st.selectbox("Choose a Movie", df['title'].values)
 
 # ---------- RECOMMEND ----------
@@ -82,4 +82,5 @@ if st.button("Recommend Movies"):
             st.markdown(f"<p style='text-align:center'>{names[i]}</p>",
 
                         unsafe_allow_html=True)
+
 
