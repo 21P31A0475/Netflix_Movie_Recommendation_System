@@ -55,7 +55,7 @@ st.markdown("<h1 style='text-align:center;'>Netflix Movie Recommendation System<
             unsafe_allow_html=True)
 
 # ---------- SELECT ----------
-movie = st.selectbox("Choose a Movie", df['title'])
+movie = st.selectbox("Choose a Movie", df['title'].values)
 
 # ---------- RECOMMEND ----------
 def recommend(movie):
@@ -82,3 +82,4 @@ if st.button("Recommend Movies"):
             st.markdown(f"<p style='text-align:center'>{names[i]}</p>",
 
                         unsafe_allow_html=True)
+
