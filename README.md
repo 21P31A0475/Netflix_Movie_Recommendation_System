@@ -1,6 +1,5 @@
 # Netflix Movie Recommendation System
 
----
 
 ## Project Overview
 
@@ -15,7 +14,6 @@ This project presents a Content-Based Movie Recommendation System developed usin
 - Uses **Cosine Similarity** to rank similar movies  
 - Demonstrates practical implementation of text feature engineering and recommendation algorithms  
 
----
 
 ## Dataset Details
 
@@ -35,7 +33,6 @@ Additional preprocessing steps:
 - Dropped unnecessary columns  
 - Managed missing and null values  
 
----
 
 ## Tools and Technologies
 
@@ -47,7 +44,6 @@ Additional preprocessing steps:
 - Streamlit  
 - Pickle  
 
----
 
 ## Implementation Steps
 
@@ -76,7 +72,6 @@ Additional preprocessing steps:
 - Movies are ranked in descending order  
 - Top 5 closest matches are displayed  
 
----
 
 ## Application Interface
 
@@ -88,7 +83,6 @@ User Interaction:
 - View recommended movies  
 - Display corresponding movie posters  
 
----
 
 ## Model Specifications
 
@@ -98,7 +92,6 @@ User Interaction:
 - **Similarity Measure:** Cosine Similarity  
 - **Dataset Scale:** 21,000+ movies  
 
----
 
 ## Knowledge Gained
 
@@ -109,7 +102,6 @@ User Interaction:
 - Model persistence using Pickle  
 - Deployment of machine learning solutions with Streamlit  
 
----
 
 ## Future Scope
 
@@ -119,7 +111,6 @@ User Interaction:
 - Deployment on cloud platforms for scalability  
 - Enhancement of UI with advanced filtering, sorting, and search capabilities  
 
----
 
 ## Conclusion
 
