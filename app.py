@@ -34,7 +34,7 @@ def set_bg(img_file):
     </style>
     """, unsafe_allow_html=True)
 
-set_bg("NetflixLogo(1).png")   # <-- Your Netflix Background image
+set_bg("NetflixLogo(1).png")   # <-- Netflix Background image
 
 # ---------- NETFLIX LOGO TOP LEFT ----------
 st.markdown("""
@@ -44,6 +44,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("<br><br><br>", unsafe_allow_html=True)
+
 
 # ---------- LOAD DATA ----------
 similarity = pickle.load(open('moviessimilarity.pkl', 'rb'))
@@ -79,4 +80,5 @@ if st.button("Recommend Movies"):
         with cols[i]:
             st.image(posters[i], width="stretch")
             st.markdown(f"<p style='text-align:center'>{names[i]}</p>",
+
                         unsafe_allow_html=True)
