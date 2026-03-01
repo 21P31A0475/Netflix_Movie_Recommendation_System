@@ -47,8 +47,9 @@ st.markdown("<br><br><br>", unsafe_allow_html=True)
 
 
 # ---------- LOAD DATA ----------
-similarity = pickle.load(open('moviessimilarity.pkl', 'rb'))
-df = pd.read_csv('tmdbdf.csv').iloc[:len(similarity)]
+with open('moviessimilarity.pkl','rb') as file:
+    similarity = pickle.load(file)
+df = pd.read_csv('tmdbdf.csv').iloc[:len(similarity)] # Total 6000 rows
 
 # ---------- TITLE ----------
 st.markdown("<h1 style='text-align:center;'>Netflix Movie Recommendation System</h1>",
@@ -82,5 +83,6 @@ if st.button("Recommend Movies"):
             st.markdown(f"<p style='text-align:center'>{names[i]}</p>",
 
                         unsafe_allow_html=True)
+
 
 
